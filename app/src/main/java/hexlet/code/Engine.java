@@ -2,7 +2,7 @@ package hexlet.code;
 
 import java.util.Scanner;
 public class Engine {
-    public static final int newROUNDS = 3;
+    public static final int NEWROUNDS = 3;
     private static final Scanner SCANNER = new Scanner(System.in);
     private static final String USERNAME = getName();
     public static String getName() {
@@ -35,7 +35,7 @@ public class Engine {
     }
 
     public static int getROUNDS() {
-        return newROUNDS;
+        return NEWROUNDS;
     }
     public static int generateNumber(int a) {
         return (int) (Math.random() * a);
