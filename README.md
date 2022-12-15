@@ -7,4 +7,13 @@
 
 Greet/exit: https://asciinema.org/a/DrxTAikYiFuk2HD5NS3IzhLE9
 
-Even:
+Even: https://asciinema.org/a/26vtMD8p3RQtVHflQAjS4nJV6
+
+Calc: https://asciinema.org/a/z6MBi1KMmawJToGAOrQPBGUpw
+
+GSD: https://asciinema.org/a/E2GXzLaMeYJXDM0nDMAnXJlu4
+
+Progression: https://asciinema.org/a/8n3yGdmQydn8Kv20TkRDIGnlG
+
+Prime: https://asciinema.org/a/jzooEWzFfK9vkGgxwDeBKDSSo
+
