@@ -10,7 +10,7 @@ public class Progression {
 
     public static void progressionGame() {
 
-        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
+        String[][] questionsAndAnswers = new String[Engine.newROUNDS][2];
 
         for (int i = 0; i < questionsAndAnswers.length; i++) {
             questionsAndAnswers[i][0] = getQuestion();

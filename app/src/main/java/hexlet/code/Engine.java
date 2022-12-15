@@ -1,12 +1,10 @@
 package hexlet.code;
 
 import java.util.Scanner;
-import hexlet.code.game.Calc;
 public class Engine {
-    public static int ROUNDS = 3;
+    public static final int newROUNDS = 3;
     private static final Scanner SCANNER = new Scanner(System.in);
-    private static final String userName = getName();
-
+    private static final String USERNAME = getName();
     public static String getName() {
         System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name?");
@@ -25,7 +23,7 @@ public class Engine {
 
             if (!userAnswer.equals(questionAndAnswer[1])) {
                 System.out.println(userAnswer + " is wrong answer ;(. Correct answer was " + questionAndAnswer[1]);
-                System.out.println("Let's try again, " + userName + "!");
+                System.out.println("Let's try again, " + USERNAME + "!");
                 return;
             }
 
@@ -33,11 +31,11 @@ public class Engine {
             System.out.println("Correct!");
         }
 
-        System.out.println("Congratulations, " + userName + "!");
+        System.out.println("Congratulations, " + USERNAME + "!");
     }
 
     public static int getROUNDS() {
-        return ROUNDS;
+        return newROUNDS;
     }
     public static int generateNumber(int a) {
         return (int) (Math.random() * a);

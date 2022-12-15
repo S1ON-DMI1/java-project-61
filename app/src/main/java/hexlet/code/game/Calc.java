@@ -1,15 +1,14 @@
 package hexlet.code.game;
 
 import hexlet.code.Engine;
-
 public class Calc {
     private static final int RANDOM_NUMBER = 1000;
     private static final int RANDOM_NUMBER_FOR_OPERAND = 3;
     private static int arithmeticResult;
-    private static final String mainQuestion = "What is the result of the expression?";
+    private static final String MAINQUESTION = "What is the result of the expression?";
 
     public static void calcGame() {
-        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
+        String[][] questionsAndAnswers = new String[Engine.newROUNDS][2];
         for (int i = 0; i < questionsAndAnswers.length; i++) {
             int firstNumber = Engine.generateNumber(RANDOM_NUMBER);
             int secondNumber = Engine.generateNumber(RANDOM_NUMBER);
@@ -18,7 +17,7 @@ public class Calc {
             questionsAndAnswers[i][1] = Integer.toString(getAnswer(firstNumber, secondNumber, arithmeticOperand));
         }
 
-        Engine.play(mainQuestion, questionsAndAnswers);
+        Engine.play(MAINQUESTION, questionsAndAnswers);
     }
 
     private static String getQuestion(int first, int second, String arithmeticOperand) {
