@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 
 public class Prime {
     private static final int RANDOM_NUMBER = 50;
-    static final String mainQuestion = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+    static final String MAIN_QUESTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
     public static void primeGame() {
 
@@ -17,7 +17,7 @@ public class Prime {
             questionsAndAnswers[i][1] = getAnswer(randomNumber);
         }
 
-        Engine.play(mainQuestion, questionsAndAnswers);
+        Engine.play(MAIN_QUESTION, questionsAndAnswers);
     }
 
     private static String getAnswer(int randomNumber) {

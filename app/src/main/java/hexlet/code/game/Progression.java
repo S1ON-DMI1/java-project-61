@@ -6,7 +6,7 @@ public class Progression {
     private static final int NUMBER_START = 10;
     private static final int NUMBER_END = 5;
     private static String guessNumber;
-    static final String mainQuestion = "What number is missing in the progression?";
+    static final String MAIN_QUESTION = "What number is missing in the progression?";
 
     public static void progressionGame() {
 
@@ -17,7 +17,7 @@ public class Progression {
             questionsAndAnswers[i][1] = getAnswer();
         }
 
-        Engine.play(mainQuestion, questionsAndAnswers);
+        Engine.play(MAIN_QUESTION, questionsAndAnswers);
     }
 
     private static String getAnswer() {

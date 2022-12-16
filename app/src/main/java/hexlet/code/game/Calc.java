@@ -5,7 +5,7 @@ public class Calc {
     private static final int RANDOM_NUMBER = 1000;
     private static final int RANDOM_NUMBER_FOR_OPERAND = 3;
     private static int arithmeticResult;
-    static final String mainQuestion = "What is the result of the expression?";
+    static final String MAIN_QUESTION = "What is the result of the expression?";
 
     public static void calcGame() {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
@@ -17,7 +17,7 @@ public class Calc {
             questionsAndAnswers[i][1] = Integer.toString(getAnswer(firstNumber, secondNumber, arithmeticOperand));
         }
 
-        Engine.play(mainQuestion, questionsAndAnswers);
+        Engine.play(MAIN_QUESTION, questionsAndAnswers);
     }
 
     private static String getQuestion(int first, int second, String arithmeticOperand) {
