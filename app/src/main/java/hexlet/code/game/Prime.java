@@ -4,11 +4,11 @@ import hexlet.code.Engine;
 
 public class Prime {
     private static final int RANDOM_NUMBER = 50;
-    private static final String MAINQUESTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+    static final String mainQuestion = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
     public static void primeGame() {
 
-        String[][] questionsAndAnswers = new String[Engine.newROUNDS][2];
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
 
         for (int i = 0; i < questionsAndAnswers.length; i++) {
             int randomNumber = Engine.generateNumber(RANDOM_NUMBER, 1);
@@ -17,7 +17,7 @@ public class Prime {
             questionsAndAnswers[i][1] = getAnswer(randomNumber);
         }
 
-        Engine.play(MAINQUESTION, questionsAndAnswers);
+        Engine.play(mainQuestion, questionsAndAnswers);
     }
 
     private static String getAnswer(int randomNumber) {

@@ -6,11 +6,11 @@ public class Progression {
     private static final int NUMBER_START = 10;
     private static final int NUMBER_END = 5;
     private static String guessNumber;
-    private static String mainQuestion = "What number is missing in the progression?";
+    static final String mainQuestion = "What number is missing in the progression?";
 
     public static void progressionGame() {
 
-        String[][] questionsAndAnswers = new String[Engine.newROUNDS][2];
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
 
         for (int i = 0; i < questionsAndAnswers.length; i++) {
             questionsAndAnswers[i][0] = getQuestion();
